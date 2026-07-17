@@ -1,0 +1,95 @@
+h1 {
+  color: #000000a1;
+}
+.background {
+  min-width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-box {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  color: white;
+  font-family: "Roboto";
+  margin: unset;
+}
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+.temperature {
+  font-size: 55px;
+  font-weight: 700;
+}
+.weather-description {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.card {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #262b26a1;
+  max-width: 600px;
+  width: 90%;
+  margin: 20px 0 20px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  padding: 20px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card > div {
+  margin: 0px 20px 0px 20px;
+}
+.vertical-line {
+  background-color: rgba(217, 217, 217, 0.287);
+  border: 1px solid rgba(217, 217, 217, 0.287);
+}
+.container {
+  padding: 16px;
+}
+.search-bar {
+  width: 300px;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.search-button {
+  width: 80px;
+  height: 45px;
+  border-radius: 22px !important;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#forecast {
+  padding: unset;
+}
+
+@media (max-width: 650px) {
+  .vertical-line {
+    display: none;
+  }
+}
